@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;700;900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+  
+body {
+    margin: 0 auto;
+    background-color: #aa391d;
+    font-family: 'Outfit', sans-serif;
+    color: #ebebeb;
+    text-align: center;
+}
+
+/* HEADER */
+
+header {
+    background-image: url('img/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: 20px auto;
+    width: 70%;
+    height: 200px;
+}
+
+
+h1 {
+    margin: 50px auto;
+    color: black;
+    font-size: 3em;
+}
+
+/* MAIN */
+
+main {
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    background-color: ;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 50px
+    
+}
+
+h2 {
+    font-size: 2em;
+}
+
+#generateRandomNumberButton {
+    margin: 20px;
+    padding: 20px 30px;
+    font-size: 1.5em;
+    background-color: antiquewhite;
+}
+
+#generateRandomNumberButton:hover {
+    background-color: rgba(250, 235, 215, 0.397);
+}
+
+.container {
+    max-width: 768px;
+    margin-inline: auto;
+    
+}
+
+.number-card {
+    display: inline-block;
+    width: 14%;
+    height: 106px;
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+
+    background-color: antiquewhite;
+}
+
+.number-card:hover {
+    background-color: rgba(250, 235, 215, 0.397);
+}
+
+.number-card h3 {
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.number-card.selected {
+    background-color: #8b2309;
+}
+
+
+/* FOOTER */
+
