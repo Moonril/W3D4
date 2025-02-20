@@ -192,8 +192,8 @@ const createCalendarCells = function (numberOfDays) {
     const calendarSection = document.getElementById('calendar')
     calendarSection.appendChild(cell) // appendo la singola cella alla section calendario
   }
-
-  // finito il for
+    // finito il for
+  
   // vado a vedere com'è fatto memory
   console.log('MEMORY', memory)
 }

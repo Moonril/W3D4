@@ -73,6 +73,7 @@ h2 {
     border: 1px solid transparent;
     border-radius: 8px;
     cursor: pointer;
+    margin: auto 3px;
 
     background-color: antiquewhite;
 }
@@ -93,7 +94,7 @@ h2 {
     transform: translateY(-50%);
 }
 
-.number-card.selected {
+.number-card .selected {
     background-color: #8b2309;
 }
 
