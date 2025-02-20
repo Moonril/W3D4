@@ -55,12 +55,13 @@ const createNumberCards = function() {
 
 // creare una funzione che estragga un numero a caso tra 1 e 90
 
+
 const generateRandomNumber = function () {
     let randomNumber = 0
     randomNumber = Math.floor(Math.random() * 90 + 1)
     console.log(randomNumber)
     
-    alert( randomNumber)
+    /* alert( randomNumber) */
 
     /* const numberAlready = []
 
@@ -68,16 +69,27 @@ const generateRandomNumber = function () {
     console.log(numberAlready)
  */
 
-    /* const cardValue = document.querySelectorAll('h3')
+  /*   const cardValue = document.querySelectorAll('h3')
     const numberCard = document.getElementsByClassName('number-card')
-    if (randomNumber === cardValue.innerText) {
-        numberCard.classList.add('selected')
-    } */
-
+    if (randomNumber === parseInt(cardValue[i].innerText)) {
+        numberCard[i].classList.add('selected')
+    }
+ */
 
     return randomNumber // perchè non riesco ad usare questa const fuori?
 
 }
+
+const selected = function () {
+    const random = generateRandomNumber()
+    for (let i = 0; i < 90; i++){
+        if(random === i + 1) {
+            const numberCard = document.querySelectorAll('.number-card')
+            numberCard.classList.add('selected')
+        }
+    }
+}
+// selected()
 
 // e collegarla al tasto 'estrai' id="generateRandomNumberButton"
 // dobbiamo trovare un collegamento tra il randomnumber generato e i value delle carte
@@ -90,7 +102,8 @@ const generateRandomNumber = function () {
 // } 
 
 
-
+// quando clicco una card questa aggiunge il numero un array di numeri, quando riclicco il button mi controlla quali numeri sono usciti e ne estrae uno nuovo
+// sostituire onclick con eventlistener
 
 
 
@@ -99,3 +112,5 @@ const generateRandomNumber = function () {
 createNumberCards()
 // 2) poi generiamo il numero che assegnerà la classe .selected
 //generateRandomNumber()  //questo in teoria non lo devo chiamare, si chiama quando clicco sul tasto visto che ho messo onclick di là
+
+selected()
