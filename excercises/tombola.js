@@ -1,17 +1,5 @@
 
 
-// creare una funzione che estragga un numero a caso tra 1 e 90
-
-const generateRandomNumber = function () {
-    const randomNumber = Math.floor(Math.random() * 90 + 1)
-    console.log(randomNumber)
-    return randomNumber // perchè non riesco ad usare questa const fuori?
-}
-// generateRandomNumber() // - funziona
-
-// e collegarla al tasto 'estrai' id="generateRandomNumberButton"
-
-
 // creare le card per ogni numero del tabellone
 
 // <div class="number-card selected" >
@@ -65,9 +53,49 @@ const createNumberCards = function() {
 
 
 
+// creare una funzione che estragga un numero a caso tra 1 e 90
+
+const generateRandomNumber = function () {
+    let randomNumber = 0
+    randomNumber = Math.floor(Math.random() * 90 + 1)
+    console.log(randomNumber)
+    
+    alert( randomNumber)
+
+    /* const numberAlready = []
+
+    numberAlready.push(randomNumber)
+    console.log(numberAlready)
+ */
+
+    /* const cardValue = document.querySelectorAll('h3')
+    const numberCard = document.getElementsByClassName('number-card')
+    if (randomNumber === cardValue.innerText) {
+        numberCard.classList.add('selected')
+    } */
+
+
+    return randomNumber // perchè non riesco ad usare questa const fuori?
+
+}
+
+// e collegarla al tasto 'estrai' id="generateRandomNumberButton"
+// dobbiamo trovare un collegamento tra il randomnumber generato e i value delle carte
+//
+// possibile logica
+// 
+// const alreadySelected = document.querySelector('.selected')
+// if (randomnumber === cardValue) {
+// cardValue.classList.add('selected')
+// } 
+
+
+
+
+
 
 // chiamiamo le funzioni in ordine corretto:
 // 1) generiamo le carte
 createNumberCards()
 // 2) poi generiamo il numero che assegnerà la classe .selected
-generateRandomNumber()
+//generateRandomNumber()  //questo in teoria non lo devo chiamare, si chiama quando clicco sul tasto visto che ho messo onclick di là

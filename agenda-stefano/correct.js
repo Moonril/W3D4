@@ -194,6 +194,8 @@ const createCalendarCells = function (numberOfDays) {
   }
     // finito il for
   
+
+    
   // vado a vedere com'è fatto memory
   console.log('MEMORY', memory)
 }
